@@ -14,6 +14,25 @@ app.get('/news.json', (req, res) => {
     res.sendFile(path.join(__dirname, 'news.json'));
 });
 
+app.put('news.json', (req, res) => {
+    const {image, header, text} = req.body;
+    fs.readFile(path.join(__dirname, 'news.json'), (err, data) => {
+      if (err) {
+        res.status(500).send('Error reading news data');
+        return;
+      }
+      const dataNews = JSON.parse(data);
+      dataNews.push({image, header, text});
+      fs.writeFile(path.join(__dirname, 'news.json'), JSON.stringify( dataNews ), (err) => {
+        if (err) {
+          res.status(500).send('Error saving news');
+          return;
+        }
+        res.status(200).send('News saved successfully');
+      });
+    });
+});
+
 app.listen(PORT, (error) =>{
     if(!error)
         console.log("Server is Successfully Running, and App is listening on port "+ PORT)
