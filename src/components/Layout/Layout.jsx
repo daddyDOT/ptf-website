@@ -9,7 +9,7 @@ const Layout = () => {
           <NavBar />
           <BottomBar />
         </div>
-        <hr className="border-[0px] mb-[19vh]"></hr>
+        <div className="bg-[#131A2D] h-[19vh]"></div>
         <Outlet />
     </div>
   )
