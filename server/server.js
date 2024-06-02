@@ -10,6 +10,10 @@ const PORT = 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
+app.get('/news.json', (req, res) => {
+    res.sendFile(path.join(__dirname, 'news.json'));
+});
+
 app.listen(PORT, (error) =>{
     if(!error)
         console.log("Server is Successfully Running, and App is listening on port "+ PORT)
