@@ -5,3 +5,48 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+#overlay {
+  background: linear-gradient(to top, rgb(24 52 84 / 88%), rgb(24 52 84 / 0%));       
+}
+
+#big-nav {
+  background: linear-gradient(to left, #323848 55%, #131A2D 55%);
+}
+
+#slideshow {
+  background: linear-gradient(to right, #131A2D, #131A2D66),
+  url('https://ptf.unze.ba/wp/wp-content/uploads/2021/12/ptf-bit-alijansa05-min-min.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#arrow-left, #arrow-right {
+  cursor: pointer;
+}
+
+#arrow-right-line, #arrow-right-anchor, #arrow-left-line, #arrow-left-anchor{
+  transition: transform 0.3s ease;
+}
+
+#arrow-right-line, #arrow-left-line {
+  transform: scale(5, 1);
+}
+
+#arrow-right:hover {
+  #arrow-right-line {
+    transform: scale(8, 1);
+  }
+  #arrow-right-anchor {
+    transform: translateX(2rem);
+  }
+}
+
+#arrow-left:hover {
+  #arrow-left-line {
+    transform: scale(8, 1);
+  }
+  #arrow-left-anchor {
+    transform: translateX(-2rem);
+  }
+}
