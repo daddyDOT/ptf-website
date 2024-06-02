@@ -1,9 +1,19 @@
 import { Button } from "@nextui-org/react"
 import data from "../../../utils/data"
-
-
+import { useEffect, useState } from "react"
 
 const Slideshow = () => {
+    const [news, setNews] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:3000/news.json')
+            .then(response => response.json())
+            .then(data => setNews(data));
+    }, []);
+
+    useEffect(() => {
+        console.log(news);
+    }, [news]);
+
   return (
     <div className="w-full" id="slideshow">
         <div className="max-w-6xl mx-auto h-[70vh]">
