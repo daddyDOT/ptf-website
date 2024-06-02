@@ -1,7 +1,14 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+const fs = require('fs');
+const path = require('path');
+const cors = require('cors');
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors());
+app.use(bodyParser.json());
 
 app.listen(PORT, (error) =>{
     if(!error)
