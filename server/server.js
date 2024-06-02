@@ -14,7 +14,7 @@ app.get('/news.json', (req, res) => {
     res.sendFile(path.join(__dirname, 'news.json'));
 });
 
-app.put('news.json', (req, res) => {
+app.put('/news', (req, res) => {
     const {image, header, text} = req.body;
     fs.readFile(path.join(__dirname, 'news.json'), (err, data) => {
       if (err) {
@@ -28,9 +28,9 @@ app.put('news.json', (req, res) => {
           res.status(500).send('Error saving news');
           return;
         }
-        res.status(200).send('News saved successfully');
+        res.status(200).json({ message: 'News saved successfully' });
       });
-    });
+  });
 });
 
 app.listen(PORT, (error) =>{
