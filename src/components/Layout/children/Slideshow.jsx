@@ -16,7 +16,7 @@ const Slideshow = () => {
 
   return (
     <div className="w-full" id="slideshow">
-        <div className="max-w-6xl mx-auto h-[70vh]">
+        <div className="max-w-6xl mx-auto h-[81vh]">
             <div className="flex justify-between items-center h-full gap-10 px-7">
                 <div className="w-[70%] lg:w-[50%] h-full flex flex-col justify-center items-start">
                     <h1 className="text-5xl font-bold text-slate-100">{data[0].title}</h1>
