@@ -8,7 +8,7 @@ const BottomBar = () => {
                 <p className="text-[#131A2D] py-3 font-medium">Kontakt</p>
             </div>
             <div>
-                <p className="text-[#131A2D] py-3 px-3 font-medium">© 2021. Sva prava zadržana.</p>
+                <p className="text-[#131A2D] py-3 px-3 font-medium">© 2024. Sva prava zadržana.</p>
             </div>
         </div>
     </div>
