@@ -33,9 +33,9 @@ const News = () => {
   }
 
   return (
-    <div className='flex flex-col gap-7 max-w-6xl mx-auto my-[7rem]'>
+    <div className='flex flex-col gap-7 max-w-6xl mx-auto px-5 my-[7rem]'>
     <h1 className='text-4xl font-bold'>Novosti</h1>
-      <div className='flex gap-7'>
+      <div className='flex flex-wrap gap-7'>
         {news.map(newsItem => (
           <div key={newsItem.id}>
             <Card title={newsItem.title} description={newsItem.description} />
