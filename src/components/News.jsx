@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Card from './Card';
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -32,13 +33,17 @@ const News = () => {
   }
 
   return (
-    <div>
-      {news.map(newsItem => (
-        <div key={newsItem.id}>
-          <h1>{newsItem.title}</h1>
-        </div>
-      ))}
+    <div className='flex flex-col gap-7 max-w-6xl mx-auto my-[7rem]'>
+    <h1 className='text-4xl font-bold'>Novosti</h1>
+      <div className='flex gap-7'>
+        {news.map(newsItem => (
+          <div key={newsItem.id}>
+            <Card title={newsItem.title} description={newsItem.description} />
+          </div>
+        ))}
+      </div>
     </div>
+    
   );
 };
 

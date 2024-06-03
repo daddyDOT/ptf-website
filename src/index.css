@@ -18,9 +18,22 @@
   background: linear-gradient(to right, #131A2D, #131A2D66);
 }
 
-#slideshow {
-  background:
-  url('./assets/pozadina.jpg');
+#slideshow1 {
+  background-image: url('./assets/pozadina.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+#slideshow2 {
+  background-image: url('https://ptf.unze.ba/wp/wp-content/uploads/2024/05/441501946_971956648272201_6069448089168851518_n-1080x675.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+#slideshow3 {
+  background-image: url('https://ptf.unze.ba/wp/wp-content/uploads/2024/05/viber_slika_2024-05-20_16-17-12-802-980x735.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
