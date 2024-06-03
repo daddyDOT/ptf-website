@@ -16,10 +16,8 @@
 
 #slideshow {
   background: linear-gradient(to right, #131A2D, #131A2D66),
-  url('https://ptf.unze.ba/wp/wp-content/uploads/2021/12/ptf-bit-alijansa05-min-min.jpg');
-  /*background:
-  url('https://cdn.discordapp.com/attachments/1242592282058686554/1246909647047364688/bg3.jpg?ex=665e1a9a&is=665cc91a&hm=b8870ef1e6c775daa06af8abbbf20122ffa94a8831a0c366ca5e9cdb1d286928&');
-  */background-repeat: no-repeat;
+  url('./assets/pozadina.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
