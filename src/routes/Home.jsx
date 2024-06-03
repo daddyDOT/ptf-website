@@ -6,7 +6,9 @@ import Footer from '../components/Footer'
 const Home = () => {
   return (
     <div>
+        <div className='w-[100vw] overflow-x-hidden'>
         <Slideshow />
+        </div>
         <News></News>
         <Footer></Footer>
     </div>

@@ -30,7 +30,7 @@ const Slideshow = () => {
 
   return (
     <>
-        <div className="w-[100vw] absolute top-auto z-[2] h-[81vh]" id="slide-overlay">
+        <div className="w-[99vw] absolute top-auto z-[2] h-[81vh]" id="slide-overlay">
         <div className="flex items-center justify-center w-full h-full">
 
         <div className="max-w-6xl mx-auto">
@@ -61,7 +61,7 @@ const Slideshow = () => {
 
         </div>
         </div>
-        <Slider ref={slider} {...sliderSettings}>
+        <Slider ref={slider} {...sliderSettings} className="w-full">
             {news.map((item) => (
                 <div className='w-full' id={`slideshow${item.id}`} key={item.id}>
                     <div className="max-w-6xl mx-auto h-[81vh]">
