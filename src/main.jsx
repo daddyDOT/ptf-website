@@ -8,7 +8,7 @@ import {
 import "./index.css";
 import Layout from './components/Layout/Layout.jsx';
 import Home from './routes/Home.jsx';
-import About from './routes/About.jsx';
+import About from './routes/About/About.jsx';
 import Contact from './routes/Contact.jsx';
 
 const router = createBrowserRouter([
