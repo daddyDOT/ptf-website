@@ -24,7 +24,7 @@
 
 #about {
   background: linear-gradient(to right, #131A2D, #131A2D66),
-  url('https://ptf.unze.ba/wp/wp-content/uploads/2021/12/ptf-bit-alijansa05-min-min.jpg');
+  url('./assets/pozadina.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
