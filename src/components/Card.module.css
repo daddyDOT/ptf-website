@@ -1,15 +1,17 @@
 .body{
     height: 500px;
     width: 400px;
-
+    border-radius: 10px;
+    background-color: white;
 }
 .img{
     height: 250px;
     width: 100%; 
     border: 1px solid transparent;
-    background-image: url(/public/images/pic1.jpg);
+    background-image: url('../assets/pozadina.jpg');
     background-position: top;
     background-size: cover;
+    border-radius: 10px 10px 0px 0px;
 }
 /*
     background-image: url(/public/images/pic1.jpg);
@@ -43,11 +45,11 @@
     width: 100%;
 }
 .header{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 .description{
-    font-size: 20px;
+    font-size: 18px;
     color: grey;
 }
 .itemtext{
