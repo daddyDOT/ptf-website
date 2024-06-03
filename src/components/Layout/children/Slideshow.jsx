@@ -36,8 +36,8 @@ const Slideshow = () => {
                     </div>
                     <Button radius="full" className="bg-white text-[#131A2D] px-5 py-3 mt-5 font-medium">Saznaj više</Button>
                 </div>
-                <div className="w-[30%] lg:w-[50%] flex items-center justify-center p-5 lg:p-20 ml-[6rem]">
-                <img src='./images/ptfsvg.svg' className="w-full"></img>
+                <div className="w-[30%] lg:w-[50%] flex items-center justify-center p-5 pr-0 lg:p-20 lg:pr-0 ml-[6rem]">
+                    <img src='./images/ptfsvg.svg' className="w-full"></img>
                 </div>
             </div>
         </div>
