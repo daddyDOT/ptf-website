@@ -19,8 +19,8 @@ const Slideshow = () => {
         <div className="max-w-6xl mx-auto h-[81vh]">
             <div className="flex justify-between items-center h-full gap-10 px-7">
                 <div className="w-[70%] lg:w-[50%] h-full flex flex-col justify-center items-start">
-                    <h1 className="text-5xl font-bold text-slate-100">{data[0].title}</h1>
-                    <p className="text-slate-100 py-5 line-clamp-3 max-h-[90px]">{data[0].description}</p>
+                    <h1 className="text-5xl font-bold text-slate-100">{data[0]?.title}</h1>
+                    <p className="text-slate-100 py-5 line-clamp-3 max-h-[90px]">{data[0]?.description}</p>
                     
                     <div className="flex gap-10 flex-row-reverse absolute h-[70vh]">
                         <div className="w-full h-full flex flex-row-reverse justify-end items-end py-14 gap-[4rem]">
