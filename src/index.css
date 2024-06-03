@@ -14,8 +14,12 @@
   background: linear-gradient(to left, #323848 55%, #131A2D 55%);
 }
 
+#slide-overlay {
+  background: linear-gradient(to right, #131A2D, #131A2D66);
+}
+
 #slideshow {
-  background: linear-gradient(to right, #131A2D, #131A2D66),
+  background:
   url('./assets/pozadina.jpg');
   background-repeat: no-repeat;
   background-size: cover;
