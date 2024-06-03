@@ -11,6 +11,9 @@ import Home from './routes/Home.jsx';
 import About from './routes/About/About.jsx';
 import Contact from './routes/Contact.jsx';
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const router = createBrowserRouter([
   {
     path: "/",
