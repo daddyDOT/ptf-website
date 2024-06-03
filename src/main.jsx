@@ -12,6 +12,8 @@ import About from './routes/About/About.jsx';
 import Contact from './routes/Contact.jsx';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Form from './routes/Form.jsx';
+import Register from './routes/Register.jsx';
 
 
 const router = createBrowserRouter([
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/login",
+        element: <Form />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
       }
     ],
   },

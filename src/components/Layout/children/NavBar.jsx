@@ -1,6 +1,7 @@
 import { Button } from "@nextui-org/react"
 import { useEffect, useState } from "react";
 import { FaUserAlt } from "react-icons/fa"
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -30,8 +31,12 @@ const NavBar = () => {
             <div className='h-full w-[70%] overflow-visible flex justify-end'>
               <div className="w-[100vw] absolute z-[10] transition-height duration-500 ease-in-out" style={{ height: scrolled ? "125px" : "190px" }}>
                 <div className="flex h-full items-center justify-end gap-7">
+                <Link to="/register" className="text-white font-medium">
                   <Button radius="full" variant="bordered" className="tracking-wide border-[#FFFFFF40] border-[1px] text-slate-100 px-6">Kreiraj račun</Button>
+                </Link>
+                <Link to="/login" className="text-white font-medium">
                   <Button radius="full" className="bg-white font-medium px-6 tracking-wide" startContent={<FaUserAlt className="text-[#131A2D] mr-1" />}>Prijavi se</Button>
+                </Link>
                 </div>  
               </div>
               <div className="w-[100vw] bg-[#323848] skew-x-[-24deg] transition-height duration-500 ease-in-out" style={{ height: scrolled ? "125px" : "190px" }}></div>

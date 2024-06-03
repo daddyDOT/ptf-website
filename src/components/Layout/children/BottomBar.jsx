@@ -7,10 +7,10 @@ const BottomBar = () => {
             <div className="flex self-center gap-5 px-3">
                 <Link to="/" className="text-[#131A2D] font-medium">Početna</Link>
                 <Link to="/about" className="text-[#131A2D] font-medium">O nama</Link>
-                <a href="#contact" className="text-[#131A2D] font-medium">Kontakt</a>
+                <Link to="/contact" className="text-[#131A2D] font-medium">Kontakt</Link>
             </div>
             <div className="self-center">
-                <p className="text-[#131A2D] px-3 font-medium">© 2024. Sva prava zadržana.</p>
+                <p className="text-[#131A2D] px-3 font-medium hidden md:block">© 2024. Sva prava zadržana.</p>
             </div>
         </div>
     </div>

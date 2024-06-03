@@ -14,18 +14,17 @@ const ScrollBox = () => {
                 <div className={styles.container}>
                     <div className={styles.coloumn}>
                         <ul>
-                            <li>Carrers</li>
-                            <li>Our Cafe</li>
-                            <li>Chobani News</li>
-                            <li>Foodservice</li>
+                            <li>Profesori</li>
+                            <li>Kabineti</li>
+                            <li>Oglasi</li>
+                            <li>Stranice</li>
                         </ul>
                     </div>
                     <div className={styles.coloumn}>
                         <ul>
-                            <li>Consumer Care</li>
-                            <li>Alumini</li>
-                            <li>Chobani Canada</li>
-                            <li>Chobani Mexico</li>
+                            <li>Dekan</li>
+                            <li>Prodekan</li>
+                            <li>Oglasna ploča</li>
                         </ul>
                     </div>
                 </div>
@@ -50,7 +49,6 @@ const ScrollBox = () => {
                     <li>Website Terms</li>
                     <li>|</li>
                     <li>Privacy Policy</li>
-                    <li>|</li>
                 </ul>
             </li>
             <li className={styles.treci}>
