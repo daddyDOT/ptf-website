@@ -24,6 +24,14 @@
   background-position: top;
 }
 
+#about {
+  background: linear-gradient(to right, #131A2D, #131A2D66),
+  url('https://ptf.unze.ba/wp/wp-content/uploads/2021/12/ptf-bit-alijansa05-min-min.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
 #arrow-left, #arrow-right {
   cursor: pointer;
 }
@@ -60,4 +68,20 @@
   #arrow-left-anchor {
     transform: translateX(-3rem);
   }
+}
+
+.section-image {
+  background-image: linear-gradient(to bottom, #131A2D, #131a2dcc),
+  url('./assets/ptf-unze.jpg');
+}
+
+/* ------------ test ------------ */
+
+#container-scroll {
+  grid-template-areas: only;
+}
+
+#scroll {
+  grid-area: only;
+  max-width: 79.3lh;
 }
