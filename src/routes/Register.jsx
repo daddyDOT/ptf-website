@@ -11,7 +11,7 @@ const Register = () => {
     <>
     <div className="h-[8vh]"></div>
     <div className='max-w-6xl mx-auto px-5 my-10'>
-        <h1 className='text-4xl font-bold'>Login</h1>
+        <h1 className='text-4xl font-bold'>Register</h1>
         <form className='flex flex-col gap-7 mt-7' onSubmit={handleRequest}>
             <Input placeholder='Ime i prezime' label='Ime i prezime' labelPlacement='outside' />
             <Input placeholder='Email' label='Email' labelPlacement='outside' />
